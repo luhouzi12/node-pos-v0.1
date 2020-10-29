@@ -1,4 +1,5 @@
-module.exports = function main(items) {
+function printReceipt(items)
+{
     var barcodeArr = new Array();
     var nameArr = new Array();
     var quantityArr = new Array();
@@ -56,3 +57,57 @@ module.exports = function main(items) {
     '**********************\n';
     return result;
 };
+var items = [
+    {
+        Barcode: 'ITEM000000',
+        Name: 'Coca-Cola',
+        Unit: 'bottle',
+        Price: 3.00
+
+    },
+    {
+        Barcode: 'ITEM000000',
+        Name: 'Coca-Cola',
+        Unit: 'bottle',
+        Price: 3.00
+    },
+    {
+        Barcode: 'ITEM000000',
+        Name: 'Coca-Cola',
+        Unit: 'bottle',
+        Price: 3.00
+    },
+    {
+        Barcode: 'ITEM000000',
+        Name: 'Coca-Cola',
+        Unit: 'bottle',
+        Price: 3.00
+    },
+    {
+        Barcode: 'ITEM000000',
+        Name: 'Coca-Cola',
+        Unit: 'bottle',
+        Price: 3.00
+    },
+    {
+        Barcode: 'ITEM000001',
+        Name: 'Sprite',
+        Unit: 'bottle',
+        Price: 3.00
+    },
+    {
+        Barcode: 'ITEM000001',
+        Name: 'Sprite',
+        Unit: 'bottle',
+        Price: 3.00
+    },
+    {
+        Barcode: 'ITEM000004',
+        Name: 'Battery',
+        Unit: 'a',
+        Price: 2.00
+    }
+];
+
+console.log(printReceipt(items));
+//export {printReceipt};
